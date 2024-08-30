@@ -1,15 +1,31 @@
-.body {
-  display: grid;
-  place-content: center;
+body{
   height: 100vh;
+  background-color: black !important;
+  color:white !important;
 }
 
 .main-container {
   margin: auto;
   border-radius: 5px;
   padding: 10px;
+  height: 100vh;
+  align-content: center;
+}
+
+.background-container{
+  max-width: 500px;
+  margin: auto;
+  background-color: #ffffff1f;
+  border-radius: 20px;
+  padding: 65px 45px;
 }
 
 .generate-password-btn {
   margin-top: 20px;
+}
+
+@media (max-width:450px){
+  .background-container {
+    padding: 40px 15px !important;
+  }
 }

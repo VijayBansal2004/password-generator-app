@@ -30,27 +30,27 @@ function App() {
   };
   return (
     <>
-      <div className="body">
-        <div className="main-container border">
-          <Heading />
-          <PasswordRange
-            range={range}
-            setRange={setRange}
-            password={password}
-          />
-          <hr />
-          <AddtionalOptions
-            number={number}
-            setNumber={setNumber}
-            symbol={symbol}
-            setSymbol={setSymbol}
-          />
-          <GeneratePassword
-            passwordGenerator={passwordGenerator}
-            range={range}
-          />
+        <div className="main-container">
+          <div className="background-container">
+            <Heading />
+            <PasswordRange
+              range={range}
+              setRange={setRange}
+              password={password}
+              />
+            <hr />
+            <AddtionalOptions
+              number={number}
+              setNumber={setNumber}
+              symbol={symbol}
+              setSymbol={setSymbol}
+              />
+            <GeneratePassword
+              passwordGenerator={passwordGenerator}
+              range={range}
+              />
+            </div>
         </div>
-      </div>
     </>
   );
 }
